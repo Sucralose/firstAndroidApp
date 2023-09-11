@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ben Avivi :0"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/firstNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Enter First Number|הכנס מספר ראשון"
+        android:textSize="22sp"
+        android:padding="10sp"
+
+        />
+
+    <EditText
+        android:id="@+id/secondNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Second Number|הכנס מספר שני"
+        android:inputType="numberDecimal"
+        android:textSize="22sp"
+        android:padding="10sp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickChooseAdd"
+            android:text="a + b"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/multiplyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickChooseMul"
+            android:text="a * b"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/subtractButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickChooseSub"
+            android:text="a - b"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/divideButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickChooseDiv"
+            android:text="a / b"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/operationsRadioGroup">
+
+
+        <RadioButton
+            android:id="@+id/radioAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(+) Addition | חיבור"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/radioSubtract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(-) Subtraction | חיסור"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/radioMultiply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(*) Multiplication | כפל"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/radioDivide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(/) Division | חילוק"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/calculateButton"
+        android:text="  Calculate | חשב  "
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textSize="30sp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result:"
+        android:textSize="30sp"
+        />
+
+
+</LinearLayout>
